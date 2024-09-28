@@ -1,0 +1,20 @@
+
+
+services:
+  wireguard:
+#   image: linuxserver/wireguard:legacy-version-v1.0.20210914
+#   image: linuxserver/wireguard:latest
+#   image: linuxserver/wireguard:v1.0.20210914-ls6
+#   image: linuxserver/wireguard:1.0.20210914-legacy
+    image: linuxserver/wireguard:1.0.20210914-r4-ls53
+    container_name: wireguard
+    privileged: true
+
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./config:/config
+    ports:
+      - "5000:5000"
+      - "51820:51820/udp"
+

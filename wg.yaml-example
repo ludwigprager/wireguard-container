@@ -1,0 +1,26 @@
+server:
+  key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
+  host: your-domain.dynv6.net
+  address: 10.0.0.1
+  port: 51820
+  DNS:
+    - 10.0.4.1
+    - 10.0.4.2
+
+client:
+  - name: a-oppo-01
+    address: 10.0.0.2
+    key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
+  - name: a-moto-e20
+    address: 10.0.0.3
+    key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
+  - name: a-s22-01
+    address: 10.0.0.4
+    key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
+  - name: a-x10302
+    address: 10.0.0.5
+    key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
+  - name: a-fire-01
+    address: 10.0.0.6
+    key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
+
