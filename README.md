@@ -11,7 +11,7 @@ This repository provides a quickstart guide and configuration for setting up a W
 
 ## Installation
 
-To get started, you need to have Docker and Docker Compose installed on your machine.
+To get started, you need to have Docker and Docker Compose installed on a linux machine.
 
 1. Clone the repository:
 
