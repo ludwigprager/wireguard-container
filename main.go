@@ -24,7 +24,7 @@ type ServerConfig struct {
 	PublicKey     string `yaml:"publickey"`
 	Host   string `yaml:"host"`
 	Port   string `yaml:"port"`
-        DNS    []string  `yaml:"DNS"`  // Added DNS field
+        DNS    []string  `yaml:"DNS"`
 
 }
 
@@ -42,7 +42,7 @@ const serverConfigTemplate = `
 
 [Interface]
 Address = {{.Server.Address}}/24
-ListenPort = 51820
+ListenPort = {{ .Server.Port }}
 PrivateKey = {{.Server.Key}}
 PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
@@ -66,7 +66,7 @@ const clientConfigTemplate = `
 [Interface]
 
 Address = {{ .Address }}/24
-ListenPort = 51820
+ListenPort = {{ $.Server.Port }}
 PrivateKey = {{ .Key }}
 DNS = {{ index $.Server.DNS 1 }}, {{ index $.Server.DNS 1 }}
 {{- end }}

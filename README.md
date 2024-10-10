@@ -20,7 +20,7 @@ To get started, you need to have Docker and Docker Compose installed on a linux 
     cd wireguard-container
     ```
 
-2. create your config file  
+2. Create The Main Config File  
 
     ```
     cp wg.yaml-example wg.yaml
@@ -34,21 +34,21 @@ Use the following command to print a key:
     wg genkey 
     ```
 
-5. Create the config files  
-The following command will create all required config file in a new folder `config-files':
+5. Create the Client Config Files  
+The following command creates the client config files and QR-codes in a folder `config-files':
     ```
     ./create-configs.sh 
     ```
 
 
-4. Starting the Server  
+4. Start the Server  
 To start the WireGuard server, run:
 
     ```bash
     ./start.sh
     ```
 
-5. Add a mobile client  
-On an Android or Iphone install the wireguard mobile app and scan the QR code that was generated. You find it in the folder `config-files/` that was created by create-config.sh script.
+5. Add a Mobile Client  
+On an Android or Iphone install the wireguard mobile app and scan the QR code. These can be found it in the folder `config-files/` that was created in step 5. .
 
 
