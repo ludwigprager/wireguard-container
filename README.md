@@ -27,7 +27,6 @@ To get started, you need to have Docker and Docker Compose installed on a linux 
     ```
 
 3. Create Your Keys  
-
 Replace every fields marked as 'XXXXXXXXXXXXXXXXX' in the example with keys your keys.  
 Use the following command to print a key:
 
