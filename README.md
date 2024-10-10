@@ -48,7 +48,7 @@ To start the WireGuard server, run:
     ./start.sh
     ```
 
-5. Add a mobile client
+5. Add a mobile client  
 On an Android or Iphone install the wireguard mobile app and scan the QR code that was generated. You find it in the folder `config-files/` that was created by create-config.sh script.
 
 
