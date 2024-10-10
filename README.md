@@ -41,7 +41,7 @@ The following command will create all required config file in a new folder `conf
     ```
 
 
-4. Starting the Server
+4. Starting the Server  
 To start the WireGuard server, run:
 
     ```bash
