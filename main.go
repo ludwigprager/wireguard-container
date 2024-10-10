@@ -24,6 +24,8 @@ type ServerConfig struct {
 	PublicKey     string `yaml:"publickey"`
 	Host   string `yaml:"host"`
 	Port   string `yaml:"port"`
+        DNS    []string  `yaml:"DNS"`  // Added DNS field
+
 }
 
 type ClientConfig struct {
@@ -66,9 +68,7 @@ const clientConfigTemplate = `
 Address = {{ .Address }}/24
 ListenPort = 51820
 PrivateKey = {{ .Key }}
-#DNS = 192.168.4.1, 192.168.2.171
-DNS = 10.0.0.1, 192.168.2.171
-
+DNS = {{ index $.Server.DNS 1 }}, {{ index $.Server.DNS 1 }}
 {{- end }}
 
 [Peer]
