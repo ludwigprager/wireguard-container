@@ -11,7 +11,7 @@ This repository provides a quickstart guide and configuration for setting up a W
 
 ## Installation
 
-To get started, you need to have Docker and Docker Compose installed on a linux machine. You also need the `wg` command. On mobile clients the wireguard app ([link to Android play store](https://play.google.com/store/apps/details?id=com.wireguard.android ) must be installed. On Linux desktop machines the `wq-quick` command is required.
+To get started, you need to have Docker and Docker Compose installed on a linux machine. You also need the `wg` command. On mobile clients the wireguard app must be installed ([link to Android play store](https://play.google.com/store/apps/details?id=com.wireguard.android)). On Linux desktop machines the `wq-quick` command is required.
 
 1. Clone the repository:
 
