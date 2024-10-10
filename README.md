@@ -20,20 +20,22 @@ git clone https://github.com/ludwigprager/wireguard-container.git
 cd wireguard-container
 ```
 
-2. create your config file
+2. create your config file  
 
 ```
 cp wg.yaml-example wg.yaml
 
 ```
 
-3. Create Your Keys
-Replace all fields marked as 'XXXXXXXXXXXXXXXXX' in the example with keys you generate with the result from
+3. Create Your Keys  
+Replace every fields marked as 'XXXXXXXXXXXXXXXXX' in the example with keys your keys.  
+Use the following command to print a key:
 ```
 wg genkey 
 ```
 
-5. Create the config files
+5. Create the config files  
+The following command will create all required config file in a new folder `config-files':
 ```
 ./create-configs.sh 
 ```
