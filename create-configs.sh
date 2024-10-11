@@ -29,6 +29,7 @@ if [[ ! -f go.sum ]]; then
 fi
 
 go-in-docker go build main.go
+#go-in-docker gofmt -w main.go
 
 
 mkdir -p config-files
