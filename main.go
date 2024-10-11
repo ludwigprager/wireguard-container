@@ -70,7 +70,7 @@ const clientConfigTemplate = `
 Address = {{ .Address }}/24
 ListenPort = {{ $.Server.Port }}
 PrivateKey = {{ .Key }}
-DNS = {{ index $.Server.DNS 1 }}, {{ index $.Server.DNS 1 }}
+DNS = {{ index $.Server.DNS 0 }}, {{ index $.Server.DNS 1 }}
 {{- end }}
 
 [Peer]
