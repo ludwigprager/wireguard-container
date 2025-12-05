@@ -11,14 +11,14 @@ server:
 
 client:
 
-  - name: mobile-1
+  - name: client-1
     address: 10.0.0.2
     key: CLIENT1_KEY
     AllowedIP:
       - 0.0.0.0/0 
       - ::/0
 
-  - name: desktop-1
+  - name: client-2
     address: 10.0.0.3
     key: CLIENT2_KEY
     AllowedIP:
