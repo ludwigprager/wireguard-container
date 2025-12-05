@@ -8,11 +8,11 @@ cd $BASEDIR
 function go-in-docker() {
   local command="$*"
 
-  docker run -ti --rm \
+  docker run --rm \
     -w /work \
     -v $(pwd):/work/ \
-    -e GOMODCACHE=/work/go/ \
-    -e GOCACHE=/work/go/build-cache \
+    -e GOMODCACHE=/work/.go-mod-cache \
+    -e GOCACHE=/work/.go-build-cache \
     golang:1.23.1 \
     $command
 }
