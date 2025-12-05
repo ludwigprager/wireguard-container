@@ -1,0 +1,37 @@
+# use this template for a cloud vm
+
+server:
+  key: SERVER_KEY
+  host: SERVER_IP
+  address: 10.0.0.1
+  port: 51820
+  DNS:
+    - 8.8.8.8
+    - 8.8.4.4
+
+client:
+
+  - name: mobile-1
+    address: 10.0.0.2
+    key: CLIENT1_KEY
+    AllowedIP:
+      - 0.0.0.0/0 
+      - ::/0
+
+  - name: desktop-1
+    address: 10.0.0.3
+    key: CLIENT2_KEY
+    AllowedIP:
+      - 0.0.0.0/0 
+      - ::/0
+
+# AllowedIPs in Server Configuration:
+# - Specifies which IP addresses are allowed to connect to the server.
+# - Typically, you would set this to the subnet of the VPN (e.g., 10.0.0.0/24), allowing all peers within this range to communicate through the server.
+
+# Peer Configuration
+# - Defines which IP addresses the peer can communicate with through the VPN tunnel.
+# - This setting can include:
+#   -Specific IP addresses (e.g., 10.0.0.2).
+#   -Subnets (e.g., 10.0.0.0/24), allowing the peer to access all addresses within that subnet.
+#   -0.0.0.0/0 to route all traffic through the VPN, effectively making the peer's internet traffic go through the server.
