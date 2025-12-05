@@ -17,4 +17,4 @@ services:
     ports:
       - "5000:5000"
       - "51820:51820/udp"
-
+    network_mode: "host"

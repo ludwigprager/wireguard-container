@@ -3,5 +3,7 @@ go.sum
 main
 wg.yaml
 config-files
-go
 config
+.go-build-cache/
+.go-mod-cache/
+
