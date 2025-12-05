@@ -9,4 +9,4 @@ cp  config-files/server.wg0.conf config/wg_confs/wg0.conf
 #chown -R 911:911 config/
 
 docker compose up -d --build
-docker compose logs -f
+#docker compose logs -f
